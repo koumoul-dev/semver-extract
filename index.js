@@ -21,6 +21,12 @@ if (program.pjson) rawVersion = require(path.resolve(process.cwd(), 'package.jso
 const v = semver.coerce(rawVersion)
 if (!v) throw new Error(`The input version ${rawVersion} cannot be coerced to semver`)
 
-if (program.major) process.stdout.write(`${v.major}`)
-else if (program.minor) process.stdout.write(`${v.major}.${v.minor}`)
+if (program.major) {
+  if (program.X) process.stdout.write(`${v.major}.x`)
+  else process.stdout.write(`${v.major}`)
+}
+else if (program.minor) {
+  if (program.X) process.stdout.write(`${v.major}.${v.minor}.x`)
+  else process.stdout.write(`${v.major}.${v.minor}`)
+}
 else process.stdout.write(v.version)
