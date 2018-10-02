@@ -9,6 +9,8 @@
   3
   $ semver-extract --minor 3.1.0
   3.1
+  $ semver-extract -x --minor 3.1.0
+  3.1.x
   $ semver-extract v3.1.0
   3.1.0
   ```
