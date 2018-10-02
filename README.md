@@ -2,6 +2,8 @@
 
 *A small cli to parse semver tags and extract major, minor, etc.*
 
+This is very useful to create alternative tags of a docker image for example.
+
     npm i -g semver-extract
 
   ```console
