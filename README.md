@@ -2,7 +2,7 @@
 
 *A small cli to parse semver tags and extract major, minor, etc.*
 
-    npm i -g @koumoul/semver-extract
+    npm i -g semver-extract
 
   ```console
   $ semver-extract --major 3.1.0
