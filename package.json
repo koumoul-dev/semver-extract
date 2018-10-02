@@ -1,0 +1,34 @@
+{
+  "name": "semver-extract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "semver-extract": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koumoul-dev/semver-extract.git"
+  },
+  "keywords": [
+    "semver",
+    "extract",
+    "tags",
+    "docker",
+    "major",
+    "minor"
+  ],
+  "author": "Alban Mouton <alban.mouton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koumoul-dev/semver-extract/issues"
+  },
+  "homepage": "https://github.com/koumoul-dev/semver-extract#readme",
+  "dependencies": {
+    "commander": "^2.18.0",
+    "semver": "^5.5.1"
+  }
+}
